@@ -1,6 +1,3 @@
----
----
-
 $().ready ()->
   $(document).on 'click', '.actions .more', (e)->
     e.preventDefault()

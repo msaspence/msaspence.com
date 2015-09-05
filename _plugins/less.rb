@@ -11,7 +11,7 @@ module Jekyll
       #
       # Returns destination file path.
       def destination(dest)
-        File.join(dest, @dir, @name.sub(/less$/, 'css'))
+        File.join(dest, @dir, @name.sub(/(css.)?less$/, 'css'))
       end
 
       # Convert the less file into a css file.
@@ -19,12 +19,16 @@ module Jekyll
       #
       # Returns false if the file was not modified since last time (no-op).
       def write(dest)
+
         dest_path = destination(dest)
 
         add_dependencies(path)
         FileUtils.mkdir_p(File.dirname(dest_path))
         begin
-          content = ::Less::Parser.new({:paths => [File.dirname(path)]}).parse(read_content).to_css
+          less_parser = ::Less::Parser.new({:paths => [File.dirname(path)]})
+          less_parser.parse(read_content)
+          return unless modified?(dest_path, less_parser)
+          content = less_parser.to_css
           File.open(dest_path, 'w') do |f|
             f.write(content)
           end
@@ -33,6 +37,12 @@ module Jekyll
         end
 
         true
+      end
+
+      def modified? dest, less_parser
+        less_parser.imports.any? do |x|
+          File.mtime(dest) < File.mtime(x)
+        end
       end
 
       def add_dependencies path
