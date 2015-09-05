@@ -26,9 +26,9 @@ module Jekyll
         FileUtils.mkdir_p(File.dirname(dest_path))
         begin
           less_parser = ::Less::Parser.new({:paths => [File.dirname(path)]})
-          less_parser.parse(read_content)
+          parsed = less_parser.parse(read_content)
           return unless modified?(dest_path, less_parser)
-          content = less_parser.to_css
+          content = parsed.to_css
           File.open(dest_path, 'w') do |f|
             f.write(content)
           end
