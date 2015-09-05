@@ -22,7 +22,7 @@ module Jekyll
     def convert(content)
       setup
       engine = Haml::Engine.new(content)
-      engine.render
+      engine.render.gsub(/(\n|\r)+/, "")
     end
 
   end
