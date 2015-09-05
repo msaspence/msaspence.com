@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+%h1 Posts
+
+%ul.post-index
+  {% for post in site.posts %}
+  %li.post
+    %span.post-meta
+      {{ post.date | date: "%b %-d, %Y" }}
+
+    %h2
+      %a.post-link{ href: '{{ post.url | prepend: site.baseurl }}' }
+        {{ post.title }}
+
+  {% endfor %}
+  %p.rss-subscribe
+    subscribe
+    %a{ href: "{{ "/feed.xml" | prepend: site.baseurl }}" }
+      via RSS
