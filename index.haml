@@ -433,29 +433,49 @@ layout: default
           %p.description Some of my open source work:
 
           .project
-            %a.btn.btn-xs.btn-default{ href: 'https://github.com/trakio/trakio-ruby', target: '_blank' }
-              %i.icon.icon-github
-              %span.sr-only.text Trakio Ruby Client's Source Code
+            .actions
+              %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/trakio-ruby', target: '_blank' }
+                %i.icon.icon-github
+                %span.sr-only.text Trakio Ruby Client's Source Code
             %h4 Trakio Ruby Client
             %p.description A Ruby Gem for Trakio's API.
             .url.print-only
               %i.icon.icon-github
-              github.com/trakio/trakio-ruby
+              github.com/msaspence/trakio-ruby
 
           .project
-            %a.btn.btn-xs.btn-default{ href: 'https://github.com/trakio/trak.io.js', target: '_blank' }
-              %i.icon.icon-github
-              %span.sr-only.text Trakio JavaScript Client's Source Code
+            .actions
+              %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/trak.io.js', target: '_blank' }
+                %i.icon.icon-github
+                %span.sr-only.text Trakio JavaScript Client's Source Code
             %h4 Trakio JavaScript Client
             %p.description A JavaScript client for Trakio's API.
             .url.print-only
               %i.icon.icon-github
-              github.com/trakio/trak.io.js
+              github.com/msaspence/trak.io.js
 
           .project
-            %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/activated_ui', target: '_blank' }
+            .actions
+              %a.btn.btn-xs.btn-default{ href: 'http://flickrfeed.msaspence.com', target: '_blank' }
+                %i.icon.icon-external-link
+                %span.sr-only.text Flickr Feed Demo
+              %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/flickrfeed', target: '_blank' }
+                %i.icon.icon-github
+                %span.sr-only.text Flickr Feed Client's Source Code
+            %h4 Flickr Feed
+            %p.description A Demonstration of a React App, consuming Flickrs API
+            .url.print-only
               %i.icon.icon-github
-              %span.sr-only.text ActivatedUI's Source Code
+              github.com/msaspence/flickrfeed
+            .url.print-only
+              %i.icon.icon-external-link
+              flickrfeed.msaspence.com
+
+          .project
+            .actions
+              %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/activated_ui', target: '_blank' }
+                %i.icon.icon-github
+                %span.sr-only.text ActivatedUI's Source Code
             %h4 ActivatedUI Gem
             %p.description A Ruby Gem for managing the state of HTML based interfaces.
             .url.print-only
@@ -463,9 +483,10 @@ layout: default
               github.com/msaspence/activated_ui
 
           .project
-            %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/msaspence.com', target: '_blank' }
-              %i.icon.icon-github
-              %span.sr-only.text This Website's Source Code
+            .actions
+              %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/msaspence.com', target: '_blank' }
+                %i.icon.icon-github
+                %span.sr-only.text This Website's Source Code
             %h4 This Website
             %p.description
               Aside from the content and some snazzy responsive design, there are some jekyll plugins to allow for HAML, Less and live reload.

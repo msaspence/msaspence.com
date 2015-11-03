@@ -27,7 +27,7 @@ module Jekyll
         begin
           less_parser = ::Less::Parser.new({:paths => [File.dirname(path)]})
           parsed = less_parser.parse(read_content)
-          return unless modified?(dest_path, less_parser)
+          return unless modified?(dest_path, less_parser, path)
           content = parsed.to_css
           File.open(dest_path, 'w') do |f|
             f.write(content)
@@ -39,8 +39,8 @@ module Jekyll
         true
       end
 
-      def modified? dest, less_parser
-        less_parser.imports.any? do |x|
+      def modified? dest, less_parser, path
+        !File.exists?(dest) || File.mtime(dest) < File.mtime(path) || less_parser.imports.any? do |x|
           File.mtime(dest) < File.mtime(x)
         end
       end
