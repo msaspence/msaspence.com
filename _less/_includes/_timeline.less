@@ -1,7 +1,8 @@
 .timeline {
   border-left: 3px dashed @text-color;
   margin: 45px 0 50px 10px;
-
+  position: relative;
+  page-break-before: always;
   &:before,
   &:after {
     content: "";
@@ -25,6 +26,8 @@
     position: relative;
     margin-bottom: 70px;
     margin-top: 10px;
+    position: relative;
+    page-break-after: always;
 
     &:before {
       content: "";
