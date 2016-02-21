@@ -59,6 +59,7 @@ module Jekyll
       end
 
       def modified? dest
+        return true unless File.exist?(dest) && File.exist?(path)
         File.mtime(dest) < File.mtime(path)
       end
 
