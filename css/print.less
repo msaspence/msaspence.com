@@ -113,7 +113,7 @@ header {
   border-color: #777;
   margin-top: 10px;
   margin-left: 7px;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 
   &:before,
   &:after {
@@ -125,8 +125,12 @@ header {
     background: white !important;
   }
 
+  &:before {
+    margin-bottom: -20px;
+  }
+
   &:after {
-    top: 12px;
+    top: 0px;
   }
 
   .event {
