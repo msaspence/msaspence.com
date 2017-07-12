@@ -1,15 +1,14 @@
 !!! 5
 %html
   %head
-    {% include head.haml %}
+    {% haml head.haml %}
 
   %body
 
     .root
-      {% include header.haml %}
+      {% haml header.haml %}
 
       .content
         {{ content }}
 
-      {% include footer.haml %}
-
+      {% haml footer.haml %}

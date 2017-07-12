@@ -13,3 +13,5 @@ github_username:  msaspence
 # Build settings
 markdown: kramdown
 exclude: ['vendor', 'css/includes', 'css/font-awesome']
+plugins:
+  - jekyll-feed

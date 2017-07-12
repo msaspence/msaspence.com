@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-_site
-.sass-cache
-=======
 _site/
 .sass-cache/
->>>>>>> 995c88ebcd3928ecdd92ba50d10807a856a9737c
 .jekyll-metadata
+s3_website.yml
