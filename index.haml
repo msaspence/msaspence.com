@@ -560,7 +560,15 @@ layout: default
         .projects
 
           %h3 Example Code
-          %p.description Some of my open source work:
+          %p.description Some of my work:
+
+          .project
+            .actions
+              %a.btn.btn-xs.btn-default.has-tooltip{ href: 'mailto:msaspence@gmail.com?subject=Can%20I%20get%20access%20to%20PlantPassporter%20source%20code', target: '_blank', title: "Access available upon request" }
+                %i.icon.icon-github
+                %span.sr-only.text Access available upon request
+            %h4 PlantPassporter
+            %p.description A Ruby on Rails app for the required paperwork for distribution of live plants
 
           .project
             .actions
@@ -584,22 +592,6 @@ layout: default
               %i.icon.icon-github
               github.com/msaspence/trak.io.js
 
-          .project
-            .actions
-              %a.btn.btn-xs.btn-default{ href: 'http://flickrfeed.msaspence.com', target: '_blank' }
-                %i.icon.icon-external-link
-                %span.sr-only.text Flickr Feed Demo
-              %a.btn.btn-xs.btn-default{ href: 'https://github.com/msaspence/flickrfeed', target: '_blank' }
-                %i.icon.icon-github
-                %span.sr-only.text Flickr Feed Client's Source Code
-            %h4 Flickr Feed
-            %p.description A Demonstration of a React App, consuming Flickrs API
-            .url.print-only
-              %i.icon.icon-github
-              github.com/msaspence/flickrfeed
-            .url.print-only
-              %i.icon.icon-external-link
-              flickrfeed.msaspence.com
 
           .project
             .actions
@@ -628,48 +620,42 @@ layout: default
 
           %h3 Technical Skills
 
+          .skill.javascript
+            %h4 JavaScript, React, Redux, Less, SASS, CSS
+            .progress
+              .progress-bar{ style: 'width: 100%', role: 'progressbar', aria: { valuenow: '90', valuemin: '0', valuemax: '100' } }
+                .sr-only This is my jam
+
+          .skill.ruby
+            %h4 Ruby, Rails, Sinatra, Node.js
+            .progress.full
+              .progress-bar{ style: 'width: 100%', role: 'progressbar', aria: { valuenow: '100', valuemin: '0', valuemax: '100' } }
+                .sr-only This is my jam
+
           .skill.product
             %h4 Product Design, Project Management, UX
             .progress.full
-              .progress-bar{ style: 'width: 100%', role: 'progressbar', aria: { valuenow: '100', valuemin: '0', valuemax: '100' } }
-                .sr-only This is my jam
-
-          .skill.javascript
-            %h4 JavaScript, React, Redux, Less, CSS
-            .progress
-              .progress-bar{ style: 'width: 100%', role: 'progressbar', aria: { valuenow: '90', valuemin: '0', valuemax: '100' } }
+              .progress-bar{ style: 'width: 80%', role: 'progressbar', aria: { valuenow: '100', valuemin: '0', valuemax: '100' } }
                 .sr-only Highly Proficient
 
-          .skill.ruby
-            %h4 Ruby, Rails, Sinatra
-            .progress.full
-              .progress-bar{ style: 'width: 100%', role: 'progressbar', aria: { valuenow: '100', valuemin: '0', valuemax: '100' } }
-                .sr-only This is my jam
-
           .skill.php
-            %h4 MongoDB, PostgreSQL, RabbitMQ
+            %h4 MongoDB, PostgreSQL, MySQL
             .progress
               .progress-bar{ style: 'width: 80%', role: 'progressbar', aria: { valuenow: '80', valuemin: '0', valuemax: '100' } }
                 .sr-only Highly Proficient
 
 
-          .skill.php
-            %h4 Photoshop, Design
-            .progress
-              .progress-bar{ style: 'width: 70%', role: 'progressbar', aria: { valuenow: '70', valuemin: '0', valuemax: '100' } }
-                .sr-only Very Proficient
-
           .skill.chef
-            %h4 Chef, Capistrano, DevOps, HAProxy
+            %h4 AWS, DevOps, Kafka, ElasticSearch
             .progress
-              .progress-bar{ style: 'width: 50%', role: 'progressbar', aria: { valuenow: '60', valuemin: '0', valuemax: '100' } }
+              .progress-bar{ style: 'width: 50%', role: 'progressbar', aria: { valuenow: '50', valuemin: '0', valuemax: '100' } }
                 .sr-only Moderately Proficient
-
-          .skill.nodejs
-            %h4 C#, Go
+          
+          .skill.php
+            %h4 Photoshop, Design, Sketch
             .progress
-              .progress-bar{ style: 'width: 20%', role: 'progressbar', aria: { valuenow: '20', valuemin: '0', valuemax: '100' } }
-                .sr-only Just getting started
+              .progress-bar{ style: 'width: 40%', role: 'progressbar', aria: { valuenow: '40', valuemin: '0', valuemax: '100' } }
+                .sr-only Very Proficient
 
       .col-md-12.col-sm-6
         .other-interests
