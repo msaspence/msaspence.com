@@ -27,6 +27,7 @@ header {
   }
   .title {
     float: left;
+    margin-top: 20px;
     padding-right: 30px;
     padding-left: 6px;
     h2 {
@@ -39,25 +40,36 @@ header {
         color: #f76b2a !important;
       }
     }
+    h4 {
+      display: block;
+      font-size: 16px;
+      a {
+        font-weight: normal;
+      }
+    }
   }
   .actions-and-profiles {
-    width: auto;
+    width: 380px;
     float: none;
     position: absolute;
     top: -20px;
     right: 0;
     margin-left: 10px;
     margin-top: 10px;
+    display: block;
+    
     .profiles {
       position: static;
-      width: 400px;
+      width: 340px;
       float: right;
-      margin-top: 10px;
+      max-width: none;
+      margin-top: 40px;
       .profile {
         float: left;
         margin-top: 5px;
-        width: 130px;
-        margin-left: 20px;
+        width: 170px;
+        margin-left: 0px;
+        margin-right: 0;
         h5 {
           display: block;
           width: auto;
@@ -82,6 +94,9 @@ header {
         }
         h5, h5 *, a, a * {
           line-height: 14px;
+        }
+        a .text {
+          font-size: 16px;
         }
       }
     }
@@ -147,21 +162,13 @@ header {
       left: 12px;
       box-shadow: none;
     }
-    &.hacking,
-    &.education,
-    &.kent-junior,
-    &.kent {
-      display: none;
+    
+    &.hx {
+      page-break-before: always;
     }
-    &.condensed-education {
-      display: block;
-      margin-bottom: 20px;
 
-      .avatar:first-child {
-        margin-left: -25px;
-        z-index: 2;
-        position: relative;
-      }
+    &.condensed-education {
+      
       .skills {
         line-height: 16px;
         h5 {
@@ -223,6 +230,36 @@ header {
     .skills {
       margin-top: 0px;
     }
+
+    &.condensed {
+      display: block;
+      margin-bottom: 20px;
+
+      &:before {
+        top: 13px;
+      }
+
+      .avatar {
+        margin-left: -25px;
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+
+      h4 {
+        font-size: 10px;
+        font-weight: normal;
+      }
+    }
   }
 }
 
@@ -230,9 +267,9 @@ header {
   display: none;
 }
 
-.skills {
-  margin-top: 40px;
-  margin-bottom: 100px;
+.side-bar .skills {
+  margin-top: 270px;
+  padding-top: 10px;
 
   .skill {
     h4 {
@@ -251,6 +288,19 @@ header {
         border-radius: 3px;
         height: 14px;
         border-width: 1px
+      }
+    }
+  }
+}
+
+.experience {
+  ul {
+    li, li.education {
+      .area {
+        font-size: 12px;
+      }
+      .time {
+        font-size: 13px;
       }
     }
   }
@@ -277,7 +327,6 @@ header {
 }
 
 .other-interests {
-  margin-top: 270px;
   line-height: 14px;
   padding: 0 0 0;
   h3 {
@@ -327,4 +376,13 @@ li {
 
 footer {
   display: none;
+}
+
+.dont-print,
+.timeline .event .dont-print {
+  display: none;
+}
+
+.row {
+  margin-right: 0;
 }

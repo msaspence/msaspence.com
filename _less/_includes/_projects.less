@@ -1,3 +1,31 @@
+.experience {
+  margin-top: 55px;
+  
+  ul {
+    padding-left: 0;
+    li {
+      font-size: 15px;
+      margin-bottom: 10px;
+      list-style-type: none;
+      display: flex;
+      &.education {
+        display: block;
+        margin-top: 14px;
+        .area {
+          font-size: 14px;
+          line-height: 14px;
+        }
+      }
+      .area {
+          flex-grow: 1;
+      }
+      .time {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
 .projects {
   margin-top: 55px;
   max-width: 400px;
@@ -8,6 +36,7 @@
 
   p {
     margin-bottom: 15px;
+    font-size: 15px;
   }
 
   .project {

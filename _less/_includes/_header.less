@@ -5,11 +5,11 @@ header {
 
   img.avatar {
     border-radius: 50px;
-    width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     margin-top: 0px;
     position: absolute;
-    top: -5px;
+    top: 5px;
     right: 12px;
     margin-right: 0;
   }
@@ -17,19 +17,25 @@ header {
   .actions-and-profiles {
     width: 653px;
     float: right;
+    display: flex;
     .profiles {
-      margin-top: 37px;
-      width: 250px;
+      flex-grow: 1;
+      max-width: 300px;
+      margin-top: 25px;
+      width: 300px;
       .profile {
         margin-top: 8px;
         float: left;
-        margin-right: 30px;
+        margin-right: 40px;
         h5 {
           &:first-child {
             margin-top: 0;
           }
           margin-top: 10px;
           margin-bottom: 0;
+          .icon {
+            margin-right: 2px;
+          }
         }
 
         a .icon {
@@ -38,9 +44,11 @@ header {
       }
     }
 
+    .fill {
+      flex-grow: 1;
+    }
     .actions {
-      float: right;
-      margin-top: 38px;
+      margin-top: 26px;
       margin-right: 20px;
       width: 140px;
       text-align: right;
@@ -58,7 +66,7 @@ header {
       font-family: @font-family-serif;
       font-size: 64px;
       line-height: 1;
-      margin-top: 30px;
+      margin-top: 10px;
       margin-bottom: 0px;
       a {
         color: @text-color;
@@ -71,7 +79,7 @@ header {
     h3 {
       font-family: @font-family-serif;
       text-transform: uppercase;
-      margin-top: 15px  ;
+      margin-top: 10px  ;
       margin-bottom: 0;
       font-size: 35px;
       line-height: 1;
@@ -83,6 +91,21 @@ header {
         }
       }
     }
+
+    h4 {
+      font-family: @font-family-serif;
+      text-transform: none;
+      margin-top: 0px  ;
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 1;
+      font-weight: normal;
+      border: 0;
+      color: @grey;
+      a {
+        color: @grey;
+      }
+    }
   }
 
   h4 {
@@ -90,8 +113,11 @@ header {
     text-transform: uppercase;
     font-size: 14px;
     line-height: 30px;
-    border-bottom: 1px solid lighten(desaturate(@text-color, 50%), 50%);
     font-weight: normal;
+    &:first-child {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 
 }
@@ -107,15 +133,19 @@ header {
       }
 
       h3 {
-        font-size: 32px;
-        margin-top: 10px;
+        font-size: 30px;
+        margin-top: 5px;
+      }
+
+      h4 {
+        font-size: 18px;
       }
     }
     .actions-and-profiles {
       width: 550px;
+      margin-top: 13px;
 
       .actions {
-        margin-top: 29px;
         width: 120px;
         .btn {
           .btn-sm;
@@ -138,6 +168,9 @@ header {
           h5, h5 *, a, a * {
             line-height: 14px;
           }
+          a {
+            margin-left: 5px;
+          }
         }
       }
     }
@@ -148,11 +181,35 @@ header {
 @media (max-width: 992px) {
   header {
 
+   
+    .title {
+      padding-right: 0;
+      h2 {
+        font-size: 49px;
+        margin-top: 13px;
+        margin-bottom: 9px;
+      }
+
+      h3 {
+        margin-top: 5px;
+        font-size: 25px;
+      }
+      h4 {
+        font-size: 18px;
+      }
+      h3, h4 {
+        a {
+          font-weight: normal;
+        }
+      }
+    }
+
+
     .actions-and-profiles {
-      width: 390px;
+      width: 350px;
       .actions {
         margin-top: 20px;
-        margin-right: 15px;
+        // margin-right: 15px;
         .btn {
           // .text { display: none; }
         }
@@ -173,23 +230,11 @@ header {
             .text {
               display: none;
             }
+            margin-right: 2px;
           }
         }
       }
 
-    }
-
-    .title {
-      h2 {
-        font-size: 49px;
-        margin-top: 13px;
-        margin-bottom: 9px;
-      }
-
-      h3 {
-        margin-top: 11px;
-        font-size: 28px;
-      }
     }
   }
 
@@ -201,17 +246,20 @@ header {
 
     .title {
       padding-left: 10px;
+      h4 {
+        padding-left: 0;
+      }
     }
     .actions-and-profiles {
-      margin-right: 12px;
-      position: absolute;
-      top: 34px;
-      left: 230px;
-      width: auto;
-      right: 0px;
+      // margin-right: 12px;
+      // // position: absolute;
+      // top: 34px;
+      // left: 230px;
+      // width: auto;
+      // right: 0px;
       .actions {
-        margin-top: 14px;
-        margin-right: 4px;
+      //   margin-top: 14px;
+      //   margin-right: 4px;
         .btn {
           .btn-xs;
         }
@@ -239,16 +287,6 @@ header {
 
     .title {
       padding-right: 0px;
-      h2 {
-        font-size: 30px;
-        margin-top: 17px;
-        margin-bottom: 5px;
-      }
-
-      h3 {
-        font-size: 19px;
-        margin-top: 4px;
-      }
     }
 
     h4 {
@@ -261,11 +299,35 @@ header {
     }
   }
 
+  header {
+    .title {
+      margin-top: -20px;
+    }
+    .actions-and-profiles {
+      .clearfix;
+      width: auto;
+      margin-top: 20px;
+      padding: 0 10px 0;
+      position: static;
+      float: none;
+      clear: left;
+      .profiles,
+      .actions {
+        margin-top: 10px;
+        margin-right: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 500px) {
   header {
     max-width: 500px;
+    img.avatar {
+      width: 50px;
+      height: 50px;
+    }
+
     .actions-and-profiles {
       .clearfix;
       padding: 0 10px 0;
@@ -286,12 +348,22 @@ header {
       }
     }
     .title {
+      margin-top: -10px;
       h2 {
-        margin-top: 13px;
+        margin-top: 0px;
         font-size: 40px;
+        margin-bottom: 5px;
       }
       h3 {
-        font-size: 23px;
+        font-size: 20px;
+        margin-top: 5px;
+      }
+      h4 {
+        margin-top: 3px;
+        font-size: 14px;
+        a { 
+          font-weight: normal;
+        }
       }
     }
   }

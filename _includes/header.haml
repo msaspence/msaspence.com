@@ -9,17 +9,12 @@
       %a{ href: '/' } Matthew Spence
     %h3
       %a{ href: '/' } Full Stack Engineer
+    
+    %h4
+      %a{ href: '/' } With a passion and interest for product and UX
 
 
   .actions-and-profiles
-    .actions
-      %a.has-tooltip.btn.btn-default{ href: '/Matthew Spence Resume.pdf', title: 'Download a two page summary.' }
-        %i.icon.icon-fw.icon-cloud-download
-        %span.text Download
-      %a.has-tooltip#btn-print.btn.btn-default{ href: '#', title: "Print a two page summary." }
-        %i.icon.icon-fw.icon-print
-        %span.text Print
-
 
     .profiles
       .profile
@@ -32,11 +27,12 @@
       
       .profile
         %h5
+          %i.icon.icon-fw.icon-linkedin-square
+          %span.text LinkedIn:
+        %a{ href: 'https://linkedin.com/in/msaspence'}
           %i.icon.icon-fw.icon-envelope
-          %span.text Email:
-        %a{ href: 'mailto:msaspence@gmail.com'}
-          %i.icon.icon-fw.icon-envelope
-          %span.text msaspence@gmail.com
+          %span.text /msaspence
+      
 
       .profile.print-only
         %h5
@@ -45,5 +41,20 @@
         %a{ href: 'http://msaspence.com' }
           %i.icon.icon-fw.icon-globe
           %span.text msaspence.com
+      .profile
+        %h5
+          %i.icon.icon-fw.icon-envelope
+          %span.text Email:
+        %a{ href: 'mailto:msaspence@gmail.com'}
+          %i.icon.icon-fw.icon-envelope
+          %span.text msaspence@gmail.com
 
   
+    .fill
+    .actions
+      %a.has-tooltip.btn.btn-default{ href: '/Matthew Spence Resume.pdf', title: 'Download a two page summary.' }
+        %i.icon.icon-fw.icon-cloud-download
+        %span.text Download
+      %a.has-tooltip#btn-print.btn.btn-default{ href: '#', title: "Print a two page summary." }
+        %i.icon.icon-fw.icon-print
+        %span.text Print

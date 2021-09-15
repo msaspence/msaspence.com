@@ -8,6 +8,7 @@ gem "jekyll", "3.5.0"
 # gem 'less'
 gem 'therubyracer'
 # gem 'coffee-script'
+gem 's3_website'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

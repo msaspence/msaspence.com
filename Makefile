@@ -6,6 +6,6 @@ setup:
 	cp s3_website.sample.yml s3_website.yml
 
 deploy:
-	s3_website cfg apply --headless
+	bundle exec s3_website cfg apply --headless
 	jekyll build
-	s3_website push
+	bundle exec s3_website push
