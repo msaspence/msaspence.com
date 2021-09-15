@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-gem "jekyll", "3.5.0"
+gem "jekyll", "3.6.3"
+
 # gem 'haml'
 # # gem 'guard'
 # # gem 'guard-jekyll-plus'
