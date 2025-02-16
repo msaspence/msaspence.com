@@ -1,0 +1,38 @@
+// Outer container
+.progress {
+  overflow: hidden;
+  border-radius: 0;
+  background: none;
+  position: relative;
+  height: 22px;
+  box-shadow: none; 
+
+  &:before {
+    height: 22px;
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    border: 2px solid lighten($text-color, 50%);
+    border-radius: 5px;
+    background: $background;
+    z-index: 2;
+  }
+  &.full:before {
+    content: none;
+  }
+}
+
+// Bar of progress
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px solid $text-color;
+  background: $background;
+  z-index: 2;
+  position: relative;
+  box-shadow: none;
+}

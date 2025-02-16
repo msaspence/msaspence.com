@@ -11,5 +11,4 @@ $().ready ()->
   $(document).on 'click', '#btn-print', (e)->
     e.preventDefault()
     window.print()
-
-  $('.has-tooltip').tooltip({ placement: 'left' })
+  

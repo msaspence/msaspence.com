@@ -1,0 +1,15 @@
+.skills {
+  margin-top: 60px;
+  max-width: 400px;
+
+  .skill {
+    h4 {
+      margin: 10px 0 10px;
+      font-size: 16px;
+      font-family: $font-family-sans-serif;
+    }
+    .progress {
+      margin-bottom: 15px;
+    }
+  }
+}

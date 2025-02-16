@@ -1,0 +1,44 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+h3 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+h4, .h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+
+h5, .h5 {
+  font-family: $font-family-sans-serif;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 430px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .h1, .h2, .h3, .h4, .h5, .h6 {
+    small,
+    .small {
+      margin-top: 7px;
+      display: block;
+    }
+  }
+}
+
+a {
+  font-weight: bold;
+}
