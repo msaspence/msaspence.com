@@ -32,7 +32,7 @@ $label-default-bg: darken($off-white, 10%);
 }
 
 $line-height-base: 1.5294117647;
-$link-color: $brand-primary;
+$link-color: $brand-secondary;
 $link-hover-decoration: none;
 $link-hover-color: lighten($link-color, 5%);
 $headings-small-color: $text-color;
@@ -101,6 +101,7 @@ h1 {
 @import "../_sass/_includes/_advert";
 @import "../_sass/_includes/_buttons";
 @import "../_sass/_includes/_header";
+@import "../_sass/_includes/_medium";
 @import "../_sass/_includes/_footer";
 @import "../_sass/_includes/_progress-bars";
 @import "../_sass/_includes/_timeline";

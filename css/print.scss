@@ -4,7 +4,7 @@
 ---
 
 .root {
-  width: 760px;
+  width: 1080px;
 }
 
 .print-only {
@@ -22,7 +22,7 @@ a[href]:after {
 
 header {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 
   h4 {
     display: none;
@@ -38,11 +38,15 @@ header {
     h2 {
       font-size: 45px;
       margin-top: 0px;
+      a {
+        text-decoration: none;
+      }
     }
     h3 {
       font-size: 25px;
       a {
         color: #f76b2a !important;
+        text-decoration: none;
       }
     }
     h4 {
@@ -50,11 +54,12 @@ header {
       font-size: 16px;
       a {
         font-weight: normal;
+        text-decoration: none;
       }
     }
   }
   .actions-and-profiles {
-    width: 380px;
+    width: 520px;
     float: none;
     position: absolute;
     top: -20px;
@@ -65,7 +70,7 @@ header {
     
     .profiles {
       position: static;
-      width: 340px;
+      width: 520px;
       float: right;
       max-width: none;
       margin-top: 40px;
@@ -152,8 +157,8 @@ header {
 
   .event {
     padding-left: 35px;
-    margin-bottom: 20px;
-    margin-top: 0px;
+    margin-bottom: 40px;
+    margin-top: 20px;
     padding-top: 10px;
     padding-right: 0px;
     page-break-before: auto;
@@ -162,19 +167,18 @@ header {
     &:before {
       background: white !important;
       border: 1px solid #777;
-      top: 27px;
+      top: 25px;
       height: 15px;
       width: 15px;
       left: 12px;
       box-shadow: none;
     }
     
-    &.hx {
+    &.groove {
       page-break-before: always;
     }
 
-    &.condensed-education {
-      
+    .condensed-education {
       .skills {
         line-height: 16px;
         h5 {
@@ -199,8 +203,8 @@ header {
         display: inline;
         line-height: 14px;
         li {
-          line-height: 12px;
-          font-size: 11px;
+          line-height: 13px;
+          font-size: 12px;
         }
       }
     }
@@ -214,7 +218,9 @@ header {
     }
 
     h3  {
-      font-size: 18px;
+      margin-top: 6px;
+      font-size: 30px;
+    
       margin-bottom: 6px;
       .dates {
         display: inline;
@@ -224,12 +230,16 @@ header {
     }
 
     h4 {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     h5 {
-      font-size: 13px;
+      font-size: 17px;
       margin-bottom: 2px;
+    }
+    
+    p {
+      font-size: 15px;
     }
 
     .responsibilities,
@@ -245,10 +255,6 @@ header {
         top: 13px;
       }
 
-      .avatar {
-        margin-left: -25px;
-      }
-
       h2 {
         margin-top: 0;
         font-size: 22px;
@@ -262,9 +268,21 @@ header {
       }
 
       h4 {
+        position: static;
         font-size: 10px;
         font-weight: normal;
       }
+
+      img.avatar {
+        margin-left: -25px;
+        border-width: 1px solid #777;
+        width: 40px;
+        height: 40px;
+        margin-top: 0;
+        border-radius: 150px;
+        float: right;
+      }
+      
     }
   }
 }
@@ -274,12 +292,12 @@ header {
 }
 
 .side-bar .skills {
-  margin-top: 270px;
+  margin-top: 600px;
   padding-top: 10px;
 
   .skill {
     h4 {
-      font-size: 11px;
+      font-size: 12px;
       margin: 10px 0 7px;
     }
     .progress {
@@ -303,10 +321,10 @@ header {
   ul {
     li, li.education {
       .area {
-        font-size: 12px;
+        font-size: 14px;
       }
       .time {
-        font-size: 13px;
+        font-size: 15px;
       }
     }
   }
@@ -316,21 +334,34 @@ header {
   margin-top: 50px;
 
   .project {
-    margin-top: 10px;
+    margin-top: 8px;
     h4 {
-      font-size: 14px;
+      font-size: 17px;
       margin-bottom: 2px;
+    }
+    .title {
+      .icon { display: none; }
+      color: #212529;
+
+        text-decoration: none;
+      
     }
 
     .description {
-      font-size: 11px;
+      font-size: 14px;
       margin-bottom: 0;
     }
 
     .url {
-      font-size: 11px;
+      font-size: 14px;
+      text-decoration: none;
       .icon {
         margin-right: 2px;
+        color: #212529;
+      }
+      .text {
+        display: inline;
+        text-decoration: underline;
       }
     }
   }
@@ -346,10 +377,10 @@ header {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
     float: none;
     margin: 0 5px 3px 0;
-    font-size: 12px;
+    font-size: 16px;
   }
   p {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
   }
   p:last-child {
     margin-bottom: 0;
@@ -357,19 +388,19 @@ header {
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 22px;
 }
 h4 {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 10px;
 }
 h5 {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 p,
 li {
-  font-size: 11px;
+  font-size: 14px;
 }
 
 .label,
@@ -395,4 +426,98 @@ footer {
 
 .row {
   margin-right: 0;
+}
+
+.condensed {
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 30px;
+
+  &:before {
+    top: 13px;
+  }
+
+  h2 {
+    margin-top: 0;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    .dates {
+      color: #f76b2a !important;
+    }
+    small {
+      padding-left: 4px;
+    }
+  }
+
+  h4 {
+    position: static;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  img.avatar {
+    margin-left: -25px;
+    border: 1px solid #777;
+    width: 40px;
+    height: 40px;
+    margin-top: 0;
+    border-radius: 150px;
+    float: right;
+  }
+
+  .skills {
+    margin-top: 0;
+    padding-top: 0;
+    h5 {
+      margin-bottom: 3px;
+      margin-top: 8px;
+    }
+    ul {
+      padding: 0;
+      line-height: 12px;
+      margin-bottom: 10px;
+      li {
+        background: none;
+        display: inline;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bold;
+        line-height: 1;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: 0.25em;
+        font-weight: normal;
+        color: #333333;
+        &:after {
+          content: ", ";
+        }
+      }
+    }
+  }
+  
+}
+
+.statement {
+  margin-top: 25px;
+  p {
+    font-size: 16px;
+  }
+}
+
+.col-md-4 {
+  padding-left: 20px;
+}
+.col-md-8 {
+  padding-right: 20px;
+}
+a {
+  text-decoration: underline;
 }

@@ -1,6 +1,6 @@
 %header
 
-  %h4 The online resume of Matthew Spence
+  %h4 The online resume of Matthew Spence, San Diego CA
 
   %img.avatar{ src: '/img/avatar.jpg' }
 
@@ -8,15 +8,23 @@
     %h2
       %a{ href: '/' } Matthew Spence
     %h3
-      %a{ href: '/' } Full Stack Engineer
+      %a{ href: '/' } Full Stack Product Engineer
     
     %h4
-      %a{ href: '/' } With a passion and interest for product and UX
+      %a{ href: '/' } With a passion for user experience &amp; cross functional teams
 
 
   .actions-and-profiles
 
     .profiles
+      .profile
+        %h5
+          %i.icon.fa-brands.fa-medium
+          %span.text Medium:
+        %a{ href: 'https://medium.com/@msaspence', target: '_blank' }
+          %i.icon.fa-brands.fa-github
+          %span.text /@msaspence
+      
       .profile
         %h5
           %i.icon.fa-brands.fa-github
@@ -52,10 +60,11 @@
   
     .fill
     .actions
-      %a.has-tooltip.btn.btn-default{ href: '/Matthew Spence Resume.pdf', title: 'Download a two page summary.' }
+      %a.has-tooltip.btn.btn-default{ href: '/Matthew Spence Resume Full Stack Software Engineer.pdf', title: 'Download a two page summary.' }
         %i.icon.fa-solid.fa-cloud-download 
 
         %span.text Download
-      %a.has-tooltip#btn-print.btn.btn-default{ href: '#', title: "Print a two page summary." }
-        %i.icon.fa-solid.fa-print 
+      -# %a.has-tooltip#btn-print.btn.btn-default{ href: '#', title: "Print a two page summary." }
+        %i.icon.fa-solid.fa-print
+        %i.icon.fa-solid.fa-spinner.fa-spin-pulse
         %span.text Print

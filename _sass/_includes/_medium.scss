@@ -1,0 +1,21 @@
+.medium-posts {
+  margin-top: 40px;
+  .posts {
+    padding-left: 0;
+    li {
+      list-style: none;
+      margin-bottom: 8px;
+      .stats {
+        .date { 
+          display: inline;
+        }
+        .icon {
+          margin-left: 8px;
+          margin-right: 0px;
+        }
+        color: #666;
+        font-size: 14px;
+      }
+    }
+  }
+}
