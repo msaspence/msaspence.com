@@ -43,6 +43,10 @@
       background: $brand-secondary;
     }
 
+    &.groove {
+      margin-top: 100px;
+    }
+
     &.education:before {
       border-radius: 3px;
     }
@@ -111,6 +115,21 @@
         @extend .btn;
         @extend .btn-default;
         @extend .btn-xs;
+      }
+    }
+    h6 {
+      margin-bottom: 2px;
+      font-size: 18px;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+    ul {
+      padding: 0 15px;
+      margin-bottom: 0.5rem;
+
+      li {
+        line-height: 1.5;
       }
     }
     .skills {

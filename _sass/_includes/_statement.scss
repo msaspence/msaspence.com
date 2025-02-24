@@ -1,0 +1,18 @@
+
+.statement.up-front {
+    display: none;
+    padding: 0 10px;
+    margin-top: 20px;
+  }
+.statement.side-bar {
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .statement.up-front {
+        display: block;
+    }
+    .statement.side-bar {
+        display: none;
+    }
+}
