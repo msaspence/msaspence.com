@@ -2,7 +2,7 @@
   border-left: 3px dashed $text-color;
   margin: 65px 0 50px 10px;
   position: relative;
-  page-break-before: always;
+  // page-break-before: always;
   &:before,
   &:after {
     content: "";
